@@ -1,0 +1,7 @@
+PORTS = \
+  --publish 2003:2003 \
+
+VOLUMES = \
+  --volume /var/log/journal:/var/log/journal \
+  --volume /run/log/journal:/run/log/journal \
+  --volume /etc/machine-id:/etc/machine-id
