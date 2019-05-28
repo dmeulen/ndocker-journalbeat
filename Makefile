@@ -38,6 +38,9 @@ stop:
 	docker stop \
 		$(NAME)-$(INSTANCE)
 
+tag:
+	docker tag $(NS)/$(REPO):latest $(NS)/$(REPO):$(VERSION)
+
 push:
 	docker push \
 		$(NS)/$(REPO):$(VERSION)

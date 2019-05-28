@@ -1,8 +1,0 @@
-journalbeat:
-  seek_position: tail
-
-name: journalbeat
-
-output.elasticsearch:
-  hosts: ["elasticsearch.service.consul:9200"]
-  template.enabled: false
