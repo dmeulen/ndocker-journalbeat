@@ -10,7 +10,6 @@ RUN apt-get update && \
   curl -fsSL https://artifacts.elastic.co/downloads/beats/journalbeat/journalbeat-${JOURNALBEAT_VERSION}-linux-x86_64.tar.gz -o /tmp/journalbeat.tar.gz && \
   cd /tmp/ && \
   mkdir -p /opt/ndocker && \
-  mkdir -p /opt/ndocker/etc && \
   tar xzf /tmp/journalbeat.tar.gz -C /opt/ndocker/bin && \
   ln -s /opt/ndocker/journalbeat-${JOURNALBEAT_VERSION}-linux-x86_64 /opt/ndocker/journalbeat && \
   chown -R root:root /opt/ndocker/journalbeat* && \
